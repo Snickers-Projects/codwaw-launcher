@@ -216,6 +216,11 @@ namespace Call_of_Duty_World_at_War_Launcher
                     comboBoxMods.Items.Add(Path.GetFileName(modfolder));
                 }
             }
+            else
+            {
+                comboBoxMods.Visible = false;
+                btnBots.Visible      = false;
+            }
         }
 
         public bool IsDirectoryEmpty(string path)
